@@ -1,0 +1,10 @@
+
+/*tag selector selects any h3 elements*/
+h3 {
+	background: green;
+}
+
+/*class selector selects any elements with the hero class*/
+.hero {
+	border: 10px dashed turquoise;
+}
