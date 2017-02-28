@@ -1,0 +1,41 @@
+p {
+	background: pink;
+	text-align: center;
+}
+
+.modified-box {
+	box-sizing: border-box;
+	height: 200px;
+	width: 200px;
+	padding: 20px 10px;
+	border: 5px solid black;
+	margin: 0 auto;
+}
+
+section {
+	background: turquoise;
+	height: 50px;
+	width: calc(50% - 36px);
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+div {
+	background: dodgerblue;
+	height: 50px;
+	width: 50px;
+	margin: 10px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.clearfix::after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+p {
+	clear: left;
+}
