@@ -1,0 +1,36 @@
+div {
+	background-color: turquoise;
+	height: 100px;
+	display: inline-block;
+	width: 25%;
+}
+
+.child {
+	float: left;
+	width: 25%;
+	height: 100px;
+	background: orange;
+}
+
+.parent::after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.triangle {
+	padding: 0;
+	width: 0;
+	border-top: red solid 100px;
+	border-right: green solid 100px;
+	border-left: blue solid 100px;
+	border-bottom: purple solid 100px;
+}
+
+.down-right-triangle {
+	width: 0;
+	border-top: transparent solid 100px;
+	border-right: green solid 100px;
+	border-left: transparent solid 100px;
+	border-bottom: green solid 100px;
+}
