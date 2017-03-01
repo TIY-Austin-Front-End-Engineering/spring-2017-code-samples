@@ -34,3 +34,42 @@ div {
 	border-left: transparent solid 100px;
 	border-bottom: green solid 100px;
 }
+
+* {
+	border: 1px solid black;
+	padding: 1em;
+}
+
+h1 {
+	color: #2FD092;
+}
+
+section {
+	border: 5px solid blue;
+	background: pink;
+	width: 50px;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left:0;
+	right: 0;
+	width: auto;
+}
+
+.relative {
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+
+.absolute {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+}
+
+.absolute-parent {
+	position: relative;
+}
