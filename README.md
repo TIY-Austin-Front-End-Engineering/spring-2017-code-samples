@@ -7,3 +7,4 @@ For lecture notes and assignments please go [here](https://newline.theironyard.c
 - [Day 01 - Basic HTML and CSS structure](/day-01)
 - [Day 02 - CSS Box Model and Layout](/day-02)
 - [Day 03 - CSS units, pseudo-selectors, position](/day-03)
+- [Day 04 - Responsive web design](/day-04)

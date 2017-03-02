@@ -1,0 +1,29 @@
+/*the images are way too big so we make them smaller*/
+.authors img {
+	height: 30px;
+}
+
+/*the image caption area is block but needs to be to the right and aligned with the span of text, so we floated it right*/
+.image-caption {
+  float: right;
+}
+
+/*the image footer couldn't find it's floated child so we clearfixed it.*/
+.image-footer::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*the authors ul was also block, but needed to be inline with the neighbor spans and a tag, so we inline blocked it. then we noticed it had default margin, so we got rid of it!*/
+
+.authors {
+	display: inline-block;
+	margin: 0;
+}
+
+/*we aligned all the elements inside the authors ul vertically around the same line, since they are all inline or inline-block*/
+
+.authors * {
+	vertical-align: middle;
+}
