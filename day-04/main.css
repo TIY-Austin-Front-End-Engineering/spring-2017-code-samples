@@ -1,0 +1,31 @@
+body {
+	background: pink;
+}
+
+.fa-trophy {
+	color: blue;
+	font-size: 50px;
+	/*font-family: arial;*/
+}
+
+.price::before {
+	content: "$";
+}
+
+.parent-container {
+	height: 50px;
+	width: 50px;
+	background: turquoise;
+	position: relative;
+}
+
+.parent-container::after {
+	position: absolute;
+	content: "";
+	display: block;
+	height: 10px;
+	width: 10px;
+	background: dodgerblue;
+	left: 100%;
+	bottom: 0;
+}
