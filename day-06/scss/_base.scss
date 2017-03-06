@@ -1,0 +1,22 @@
+body {
+	background: turquoise;
+}
+
+h1 {
+	@include block-center(80%);
+	color: white;
+	font-size: 10rem;
+	border: $border-primary;
+
+	&:hover {
+		color: pink;
+	}
+}
+
+.clearfix {
+	&::after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+}

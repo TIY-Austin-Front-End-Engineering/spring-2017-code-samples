@@ -1,0 +1,14 @@
+.btn {
+	padding: .6rem 1rem;
+	margin: .5rem;
+	@include block-center(15%);
+
+	background: $color-primary;
+	color: white;
+	border: 0;
+	border-radius: .3rem;
+
+	&.alert {
+		background: $color-alert;
+	}
+}

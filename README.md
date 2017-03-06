@@ -8,3 +8,6 @@ For lecture notes and assignments please go [here](https://newline.theironyard.c
 - [Day 02 - CSS Box Model and Layout](/day-02)
 - [Day 03 - CSS units, pseudo-selectors, position](/day-03)
 - [Day 04 - Responsive web design](/day-04)
+
+### Week 2 - Sass and Intro to JS
+- [Day 06 - Sass](/day-06)

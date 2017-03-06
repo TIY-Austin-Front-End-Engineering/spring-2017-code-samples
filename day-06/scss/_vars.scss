@@ -1,0 +1,9 @@
+$color-primary: #B3AFAC;
+$color-alert: #ff0000;
+$border-primary: 3px solid red;
+
+@mixin block-center($width) {
+	margin: 0 auto;
+	display: block;
+	width: $width;
+}
