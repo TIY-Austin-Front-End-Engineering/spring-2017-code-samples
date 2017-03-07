@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Bourbon Neat</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width:40em)">
+
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" href="css/ie.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <noscript><link rel="stylesheet" href="../css/mobile.css"></noscript>
+    <![endif]-->
+    <script type="text/javascript">
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+  analytics.load("zqKH1nPNSA5uCwV1XiBz3LvGfPH6Muq9");
+  analytics.page()
+  }}();
+</script>
+
+  </head>
+
+  <body>
+    <nav class="bourbon">
+      <ul>
+        <li><a href="http://bourbon.io" class="bourbon">Bourbon</a></li>
+        <li><a href="http://neat.bourbon.io" class="neat current">Neat</a></li>
+        <li><a href="http://bitters.bourbon.io" class="bitters">Bitters</a></li>
+        <li><a href="http://refills.bourbon.io" class="refills">Refills</a></li>
+      </ul>
+      <h1>All maintained by the design team at <a href="http://thoughtbot.com">thoughtbot</a></h1>
+    </nav>
+
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <a href="/"><img src="images/logotype.svg" alt="Bourbon Neat Logo" /></a>
+        </div>
+
+        <nav class="buttons">
+          <a href="https://github.com/thoughtbot/neat" class="button github">
+            <img src="/images/github.png" />
+            Github
+          </a>
+          <a href="/examples/" class="button secondary">Examples</a>
+          <a href="http://thoughtbot.github.io/neat-docs/latest/" class="button docs">Docs</a>
+        </nav>
+      </div>
+    </header>
+    <section class="subtitle">
+  <h2>A <strong>lightweight</strong> semantic <strong>grid</strong> framework built with <strong>Sass</strong>.</h2>
+</section>
+
+
+<section class="code">
+<div class="highlight"><pre><code class="html"><span class="c">&lt;!-- HTML markup for the section right below this code block --&gt;</span>
+<span class="nt">&lt;section&gt;</span>
+  <span class="nt">&lt;header&gt;</span>What is it about?<span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;section&gt;</span>Neat is an open source semantic grid framework built with Sass…<span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</code></pre></div>
+<br>
+<div class="highlight"><pre><code class="scss"><span class="c1">// Enter Neat</span>
+<span class="nt">section</span> <span class="p">{</span>
+  <span class="k">@include</span><span class="nd"> outer-container</span><span class="p">;</span>
+  <span class="nt">header</span> <span class="p">{</span> <span class="k">@include</span><span class="nd"> span-columns</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span> <span class="p">}</span>
+  <span class="nt">section</span> <span class="p">{</span> <span class="k">@include</span><span class="nd"> span-columns</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">// And the result is...</span>
+</code></pre></div>
+</section>
+
+<section class="instructions">
+  <section id="what">
+    <header>
+      <h3>What is it about?</h3>
+    </header>
+
+    <section>
+    <p>Neat is a <strong>semantic</strong> grid framework built with Sass. It is <strong>simple</strong> enough to get you up and running in minutes, and powerful enough to handle any <strong>responsive</strong> layout you can dream of.</p>
+
+    </section>
+  </section>
+
+  <section id="why">
+    <header>
+      <h3>Why another grid framework?</h3>
+    </header>
+
+    <section>
+    <p>Because we are not happy with other frameworks. We built Neat with the aim of promoting <strong>clean</strong> and semantic markup; it relies entirely on Sass mixins and does not pollute your HTML with presentation classes and extra wrapping <code>div</code>'s.</p>
+  
+<p>It also aims to stay as <strong>lightweight</strong> as possible; just enough to handle the most common grid uses in modern Web design.</p>
+
+    </section>
+  </section>
+
+  <section id="responsive">
+    <header>
+      <h3>Is it responsive?</h3>
+    </header>
+
+    <section>
+    <p>Yes. You can even change the grid settings in a specific breakpoint.</p>
+
+    </section>
+  </section>
+
+  <section id="getting-started">
+    <header>
+    <h3>Alright. How do I get started?</h3>
+    </header>
+
+    <section>
+      <a href="https://github.com/thoughtbot/neat#requirements">Install</a> Neat and its dependencies, read the <a href="/docs">documentation</a> and check the <a href="/examples/">examples</a> page if you get lost. If you want to use Neat on your Rails app, there is a <a href="https://rubygems.org/gems/neat">gem</a> for that.
+
+    </section>
+  </section>
+
+  <section id="support">
+    <header>
+    <h3>Feedback?</h3>
+    </header>
+
+    <section>
+      <p>
+  If you think something is broken or can be improved, fork the <a href="https://github.com/thoughtbot/neat">repo</a>, and submit a pull request.
+  You can also tweet your questions or suggestions to <a href="//twitter.com/bourbonsass">@bourbonsass</a>.
+</p>
+
+<p>Neat is maintained and funded by <a href="//thoughtbot.com">thoughtbot, inc</a>.</p>
+
+    </section>
+  </section>
+
+</section>
+
+<footer>© 2012 – 2016 thoughtbot, inc.</footer>
+
+  </body>
+
+</html>

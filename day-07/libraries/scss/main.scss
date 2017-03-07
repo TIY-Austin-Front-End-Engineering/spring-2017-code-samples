@@ -1,0 +1,16 @@
+@import "node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "node_modules/bourbon-neat/core/neat";
+
+body {
+	margin: 0;
+	@include grid-visual;
+	@include grid-container;
+	font-family: $helvetica;
+}
+
+.book {
+	@include grid-column(6);
+	margin-top: 20px;
+	border: 5px solid blue;
+	box-sizing: border-box;
+}
