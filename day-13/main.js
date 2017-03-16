@@ -92,8 +92,6 @@ healingNames.forEach(function(name, i, arr) {
 
 // find all unicorns names and ages and add them to the list in the dom
 // "<name> is <age> years old"
-
-
 function makeLis() {
 	var outputArea = document.querySelector('#unicorns');
 	var sentences = unicorns.map(function(unicorn, i, arr){
