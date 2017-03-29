@@ -69,7 +69,7 @@ export default function app() {
 
   const render = (state, event, data) => {
     //Our render function grabs the view from the state and puts it on the page
-    $('#app').html(state.view(store));
+    $('#app').html(state.view(appStore));
   }
 
   //Everytime an event is 'fired' the store will run these two functions.
