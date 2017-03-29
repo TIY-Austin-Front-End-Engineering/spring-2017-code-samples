@@ -1,6 +1,5 @@
 
 
-## Todo
-
-- Add in jQuery / React
-- Ensure asset loading is working in and outside of react
+## Commands!
+  - To run your local server `npm run start`
+  - To build your code before deploying `npm run build

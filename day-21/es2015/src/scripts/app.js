@@ -7,9 +7,8 @@ export default function app() {
 
   // Let is not function scope but lexical scope
 	for(let i = 0; i < 10; i++) {
-
+		console.log(i);
 	}
-	console.log(i);
 
 	// Constants (They don't change)
 	const MAX_STUDENTS = 10;
@@ -22,7 +21,7 @@ export default function app() {
 	const greeter = (name) => {
     let msg = "Hello" + name + "You look great!"; // concat on two strings
     //Template string
-    let msg = `Hello ${name}. You look great!`; // interpolating
+    // let msg = `Hello ${name}. You look great!`; // interpolating
 		return msg;
 	}
 }

@@ -1,0 +1,16 @@
+$big-font: 15rem;
+
+.jumbo {
+    color: #333;
+    font-size: $big-font;
+    margin: 0;
+    text-shadow: 1px 2px 1px #DEDEDE, 2px 3px 0 #FEFEFE, -1px -1px 0 #222;
+}
+
+html {
+    body {
+        margin: 0;
+        padding: 0;
+        background: #CACACA;
+    }
+}
