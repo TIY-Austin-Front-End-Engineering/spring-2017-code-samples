@@ -1,4 +1,9 @@
-export default function todoView (todo) {
-  console.log(todo);
-  return `<li>${todo.name}</li>`;
+export default function todoView (store, todo) {
+  let $html = $(`<li>${todo.name} - <button>ⓧ</button></li>`);
+
+  $($html).on('click', 'button', function () {
+    store.dispatch({ type: "DELETE_TODO", todo: todo });
+  });
+
+  return $html;
 }
