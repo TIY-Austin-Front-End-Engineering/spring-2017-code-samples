@@ -1,4 +1,3 @@
-import api from '../api.js'
 import utils from '../utils.js'
 import loginView from '../views/login.js'
 import todoListView from '../views/todo_list.js'
@@ -12,6 +11,8 @@ const initialState = {
 }
 
 export default function reducer (currentState, action) {
+  const newState = utils.newState(currentState);
+
   if (currentState === undefined) {
     return initialState;
   }
@@ -27,11 +28,19 @@ export default function reducer (currentState, action) {
     case "TODOS_LOADED":
       var todos = action.todos.map((todoJSON) => new Todo(todoJSON));
 
-      return utils.copyState(currentState, {
+      return newState({
          todos: todos,
          loadingTodos: false
       });
 
+    //Has "side effects"
+    case "UPDATING_TODO":
+      return newState({ loadingTodos: true });
+
+    case "UPDATED_TODO":
+      return newState({ loadingTodos: false });
+
+    // "NoOp"
     case "START": // Do nothing, we just started.
       return currentState;
 
