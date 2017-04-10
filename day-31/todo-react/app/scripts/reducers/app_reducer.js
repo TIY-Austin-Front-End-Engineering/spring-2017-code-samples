@@ -1,13 +1,14 @@
 import utils from '../utils.js'
-import loginView from '../views/login.js'
-import todoListView from '../views/todo_list.js'
+import loginView from '../components/login.js'
+import todoListView from '../components/todo_list.js'
 import Todo from '../models/todo.js'
 
 const initialState = {
   currentUser: null,
   loadingTodos: false,
   todos: [],
-  view: loginView
+  view: loginView,
+  title: "Welcome React!"
 }
 
 export default function reducer (currentState, action) {
