@@ -1,0 +1,1 @@
+git clone https://github.com/TIY-Austin-Front-End-Engineering/webpack-starter.git ${1:-`.`} && cd ${1:-`webpack-starter`} && rm -rf .git/ && echo "Done."

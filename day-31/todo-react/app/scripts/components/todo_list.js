@@ -18,7 +18,6 @@ const TodoList = React.createClass({
   },
 
   render: function () {
-    console.log(this);
     if (this.state.loadingTodos) {
       return (
        <section>
