@@ -43,4 +43,4 @@ class TodoList extends React.Component {
   }
 }
 
-export default connect(containers.allState)(TodoList)
+export default connect(containers.userAndTodos)(TodoList)

@@ -3,7 +3,7 @@ import loginView from '../components/login.js'
 import todoListView from '../components/todo_list.js'
 import Todo from '../models/todo.js'
 
-const initialState = {
+const initState = {
   currentUser: null,
   loadingTodos: false,
   todos: [],
@@ -15,7 +15,7 @@ export default function reducer (currentState, action) {
   const newState = utils.newState(currentState);
 
   if (currentState === undefined) {
-    return initialState;
+    return initState;
   }
 
   switch(action.type) {

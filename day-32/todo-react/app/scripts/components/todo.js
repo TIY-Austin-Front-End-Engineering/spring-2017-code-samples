@@ -4,6 +4,7 @@ import containers from '../containers/all.js'
 import deleteTodo from '../actions/delete_todo.js'
 import updateTodo from '../actions/update_todo.js'
 import completeTodo from '../actions/complete_todo.js'
+import TodoToolbar from './todo_toolbar.js'
 
 class Todo extends React.Component {
   constructor (props) {
@@ -37,21 +38,14 @@ class Todo extends React.Component {
     return classes.join(" ");
   }
 
-  renderActions () {
-    if (this.props.todo.complete === "true") {
-      return (<button onClick={this.handleDeleted}>🙅</button>);
-    } else {
-      return (<button onClick={this.handleChecked}>✅</button>);
-    }
-  }
-
   render () {
     return (
       <li className={this.todoClass()}>
-        <span>{this.props.todo.name} -</span>
-        <span>
-          {this.renderActions()}
-        </span>
+        <span>{this.props.todo.name}-</span>
+        <TodoToolbar
+          completed={this.props.todo.complete === "true"}
+          onChecked={this.handleChecked}
+          onDeleted={this.handleDeleted} />
       </li>);
   }
 }
