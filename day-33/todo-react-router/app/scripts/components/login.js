@@ -12,7 +12,12 @@ class Login extends React.Component {
 
   handleClick () {
     let username = this.refs.username.value;
-    this.props.dispatch(loginUser(username))
+    this.props.dispatch(
+      loginUser(
+        username,
+        this.props.history.push
+      )
+    );
   }
 
   render () {

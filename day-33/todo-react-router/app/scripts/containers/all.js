@@ -6,6 +6,7 @@ export default {
   userAndTodos: function (state) {
     return {
       currentUser: state.currentUser,
+      loadingTodos: state.loadingTodos,
       todos: state.todos
     }
   },

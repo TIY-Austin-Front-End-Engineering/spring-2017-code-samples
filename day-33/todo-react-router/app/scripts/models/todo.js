@@ -4,6 +4,6 @@ export default function Todo (attrs) {
   this.complete = attrs.complete;
 
   this.display = function () {
-    return `${this.title} -- ${this.description}`
+    return `${this.name} -- ${this.complete}`
   }
 }

@@ -8,7 +8,7 @@ const initState = {
   loadingTodos: false,
   todos: [],
   view: loginView,
-  title: "Welcome React!"
+  title: "Welcome to React Router!"
 }
 
 export default function reducer (currentState, action) {

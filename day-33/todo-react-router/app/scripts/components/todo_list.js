@@ -1,15 +1,12 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Todo from './todo.js';
+import TodoItem from './todo_item.js';
 import containers from '../containers/all.js'
 import createTodo from '../actions/create_todo.js'
 
 class TodoList extends React.Component {
   constructor (props) {
     super(props)
-    this.state = {
-      loadingTodos: false
-    };
     this.handleChange = this.handleChange.bind(this);
   }
 
@@ -20,7 +17,7 @@ class TodoList extends React.Component {
   }
 
   render () {
-    if (this.state.loadingTodos) {
+    if (this.props.loadingTodos) {
       return (
        <section>
         <div className='loader'> <div></div> <div></div> <div></div> <div></div> <div></div> </div>
@@ -33,7 +30,7 @@ class TodoList extends React.Component {
           <h4>{`${this.props.currentUser}'s Important ToDo List`}</h4>
           <ul>
             {this.props.todos.map((todo, idx) => {
-              return (<Todo key={idx} todo={todo} />);
+              return (<TodoItem key={idx} todo={todo} history={this.props.history} />);
             })}
           </ul>
           <input type='text' onKeyUp={this.handleChange} placeholder='feed the 😻' />

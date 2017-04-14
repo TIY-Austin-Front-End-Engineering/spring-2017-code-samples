@@ -2,20 +2,20 @@ import React from 'react';
 import { connect } from 'react-redux'
 import container from '../containers/all.js'
 
-class AppRoot extends React.Component {
+class AppLayout extends React.Component {
   constructor (props) {
     super(props);
   }
 
   render () {
-    let CurrentView = this.props.view;
     return (
       <main>
-        <h1>{this.props.title}</h1>
-        <CurrentView />
+        <h1>TodoList</h1>
+        <h5>{this.props.title}</h5>
+        {this.props.children}
       </main>
     );
   }
 }
 
-export default connect(container.allState)(AppRoot)
+export default connect(container.allState)(AppLayout)
