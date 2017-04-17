@@ -1,0 +1,21 @@
+.quotes {
+  .quote {
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    background: #FDFDFD;
+    padding: 0.4em;
+    text-align: center;
+    border: 1px solid #ACACAC;
+    margin: 0.4em;
+
+    &.favorite {
+      background: goldenrod;
+    }
+
+    &.back {
+      background: #455;
+      color: #DDD;
+    }
+  }
+}
